@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
-  const [{basket}, dispatch] = useStateValue();
+  const [{cart}, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/">
@@ -32,10 +32,10 @@ const Header = () => {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
-        <Link to="/checkout">
-          <div className="header__optionBasket">
+        <Link to="/checkout" className="header__optionCart">
+          <div className="header__optionCart">
             <ShoppingCartIcon />
-            <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
+            <span className="header__optionLineTwo header__optionCart">{cart?.length}</span>
           </div>
         </Link>
       </div>

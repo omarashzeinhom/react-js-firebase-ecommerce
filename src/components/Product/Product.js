@@ -4,15 +4,15 @@ import "./Product.css";
 
 function Product({ id, title, image, price , rating}) {
 
-  const [{basket}, dispatch] = useStateValue();
+  const [{cart}, dispatch] = useStateValue();
   //debug if data is passed from reducer to state start
-  console.log('The basket test', basket);
+  console.log('The cart test', cart);
     //debug if data is passed from reducer to state end
 
   const addtoCart = ()=> {
     // dispatch an action into the datalayer 
     dispatch({
-      type: 'ADD_TO_BASKET',
+      type: 'ADD_TO_CART',
       item: {
         id: id,
         title: title,
@@ -31,7 +31,7 @@ function Product({ id, title, image, price , rating}) {
       <div className="product__info">
         <p>{title}</p>
         <p className="product__price">
-          <small>$</small>
+          <small>€</small>
           <strong>{price}</strong>
         </p>
         <div className="product__rating">
