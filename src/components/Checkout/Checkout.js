@@ -3,6 +3,7 @@ import Subtotal from "../Subtotal/Subtotal";
 import "./Checkout.css";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import JUMBOTRONIMG from "../../assets/images/background/checkout_ad.webp";
+import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 
 function Checkout() {
   return (
@@ -14,7 +15,8 @@ function Checkout() {
 
       <div className="checkout__title">
         <h2>Welcome to your cart<ShoppingCartIcon/></h2>
-      </div>
+<CheckoutProduct/>      
+</div>
 
       <div className="checkout__right">
         <Subtotal />

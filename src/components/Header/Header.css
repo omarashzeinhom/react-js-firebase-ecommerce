@@ -43,16 +43,16 @@ a{
   
 }
 
-/* ShoppingBasket Logo */
+/* ShoppingCart Logo */
 
-.header__optionBasket {
+.header__optionCart {
   display: flex;
   align-items: center;
   color: antiquewhite;
   transition: 300ms;
 }
 
-.header__optionBasket:hover {
+.header__optionCart:hover {
   color: antiquewhite;
   transform: scale(125%);
   transition: 300ms;
