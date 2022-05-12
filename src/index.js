@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StateProvider } from './components/StateProvider/StateProvider';
+import reducer, { initalState } from './features/basketReducer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateProvider>
+    <StateProvider initalState={initalState} reducer={reducer}>
     <App />
     </StateProvider>
   </React.StrictMode>
