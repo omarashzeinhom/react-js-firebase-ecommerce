@@ -1,12 +1,9 @@
 .checkout{
     display: flex;
     padding: 2rem;
-    background-color: black;
     height: max-content;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
 
 
-.checkout__ad{
-    width: 100%;
-    margin-bottom: 1rem;
-}
