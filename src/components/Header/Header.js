@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom/umd/react-router-dom.development";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
   return (
@@ -32,7 +32,7 @@ const Header = () => {
         </div>
         <Link to="/checkout">
           <div className="header__optionBasket">
-            <ShoppingBasketIcon />
+            <ShoppingCartIcon />
             <span className="header__optionLineTwo header__basketCount">0</span>
           </div>
         </Link>

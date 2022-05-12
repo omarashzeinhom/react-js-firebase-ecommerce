@@ -9,6 +9,7 @@ function Home() {
       <div className="home">
         <div className="home__container">
           <div className="home__row">
+            {/* Optimize performance here */}
             <video
               autoPlay={true}
               muted={true}
@@ -19,6 +20,8 @@ function Home() {
               src={BGVID}
               type="video/mp4"
             />
+                        {/* Optimize performance here */}
+
           </div>
 
           <div className="home__row">

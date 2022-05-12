@@ -16,7 +16,7 @@
 
 .home__image {
   z-index: 1;
-  margin-bottom: -250px;
+  margin-bottom: -400px;
   mask-image: linear-gradient(
     to bottom,
     rgb(12, 235, 86),
@@ -32,4 +32,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .home__image {
+    margin-bottom: -100px;
+ 
+  }
+
 }
