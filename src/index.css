@@ -1,0 +1,95 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+/* Fonts Oswald
+* 'Regular 400 For Paragraphs and small text
+* Bold 700 For Headers and Titles
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+
+
+
+/* ---- Base Rules ---- */
+
+html {
+
+
+}
+
+
+
+
+
+
+
+
+/*
+* ----  Typeography General  ---- 
+*/
+
+body {
+  font-family: 'Radio Canada', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+
+
+/* Other Typeography*/
+
+span,
+input {
+  font-weight: 400;
+  font-family: 'Radio Canada', sans-serif;
+
+}
+
+/* ---- Module Rules ---- */
+
+
+
+
+
+
+/**** - General Styles - *****/
+
+
+
+
+
+
+
+
+
+
+/* ---- Theme State Rules ---- */
+
+/*** Media Queries for Resposinveness ***/
+
+/*** Media Queries for Medium Devices Tablets ***/
+
+@media screen and (max-width: 1024px) {
+}
+
+/*** Media Queries for Small Devices Mobile Phones ***/
+
+@media screen and (max-width: 600px) {
+}
