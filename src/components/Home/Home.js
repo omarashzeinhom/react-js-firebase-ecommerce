@@ -45,6 +45,8 @@ function Home() {
               title="USB Flash Drive 8GB"
               price={3.99}
               image="https://res.cloudinary.com/du9aympvd/image/upload/v1652279961/pexels-eprism-studio-335257_p96vx2.webp"
+              rating={3}
+
             />
           </div>
 

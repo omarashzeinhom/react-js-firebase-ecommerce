@@ -1,7 +1,9 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import { BrowserRouter as  Routes, Route, BrowserRouter } from "react-router-dom";
+//Dont delete this breaks website
+import { Router, Routes, Route, BrowserRouter } from "react-router-dom";
+// Dont delete this breaks webs
 import Checkout from "./components/Checkout/Checkout";
 function App() {
   return (
