@@ -9,16 +9,7 @@ function Home() {
       <div className="home">
         <div className="home__container">
           <div className="home__row">
-            <video
-              autoPlay={true}
-              muted={true}
-              loop={true}
-              className="home__image"
-              loading="lazy"
-              alt="home__bgimg"
-              src={BGVID}
-              type="video/mp4"
-            />
+     
           </div>
 
           <div className="home__row">
