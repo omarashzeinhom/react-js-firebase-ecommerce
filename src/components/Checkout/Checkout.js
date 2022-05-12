@@ -36,18 +36,7 @@ function Checkout() {
             rating={item.rating}
           />
         ))}
-        <CheckoutProduct
-          //id
-          id="0000001"
-          // Name
-          title="Lip stick"
-          //Price
-          price={19.99}
-          //Rating
-          rating={4}
-          //Image
-          image="https://res.cloudinary.com/du9aympvd/image/upload/v1652280154/product1_fcepwt.webp"
-        />
+       
       </div>
 
     
