@@ -4,22 +4,33 @@ import "./Checkout.css";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import JUMBOTRONIMG from "../../assets/images/background/checkout_ad.webp";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
+import { useStateValue } from "../StateProvider/StateProvider";
 
 function Checkout() {
+  const [{cart}, dispatch] = useStateValue();
   return (
     <div className="checkout">
 
       <div className="checkout__left">
-        <img className="checkout__ad" src={JUMBOTRONIMG} alt="" />
       </div>
 
       <div className="checkout__title">
         <h2>Welcome to your cart<ShoppingCartIcon/></h2>
-<CheckoutProduct/>      
+        {cart.map(item=>(
+          <CheckoutProduct
+          id={item.id}
+          title={item.title}
+          image={item.image}
+          price={item.price}
+          rating={item.rating}
+          />      
+        ))}
 </div>
 
       <div className="checkout__right">
+      
         <Subtotal />
+        
       </div>
     </div>
   );
