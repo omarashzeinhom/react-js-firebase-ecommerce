@@ -16,10 +16,9 @@
 
 .product > img {
     max-height: 199px;
-    width: 100;
-    object-fit: contain;
+    width: 100%;
     margin-bottom: 10px;
-    border-radius: 3%;
+    object-fit: contain;
 }
 
 
@@ -43,7 +42,7 @@
 
 .product__info {
     height: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .product__rating {
