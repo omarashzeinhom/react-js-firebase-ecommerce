@@ -10,7 +10,7 @@ function Product({ id, title, image, price , rating}) {
 
   const [{cart}, dispatch] = useStateValue();
   //debug if data is passed from reducer to state start
-  console.log('The cart test', cart);
+  //console.log('The cart test', cart);
     //debug if data is passed from reducer to state end
 
   const addtoCart = ()=> {
