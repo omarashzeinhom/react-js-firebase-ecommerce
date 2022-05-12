@@ -18,7 +18,7 @@ function Product({ id, title, image, price , rating}) {
         </div>
       </div>
       {/** Product Info end */}
-      <img src={image} loading="lazy"/>
+      <img src={image} loading="lazy" alt="product-img"/>
       <button>Add Product to basket</button>
     </div>
   );

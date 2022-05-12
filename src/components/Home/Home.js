@@ -3,7 +3,6 @@ import "./Home.css";
 import Product from "../Product/Product";
 //images import
 import BGVID from "../../assets/images/background/background.mp4";
-import Header from "../Header/Header";
 
 function Home() {
   return (

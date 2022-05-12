@@ -7,8 +7,8 @@ import { Link } from "react-router-dom/umd/react-router-dom.development";
 const Header = () => {
   return (
     <div className="header">
-     <Link to="/">
-      <h1 className="header__logoText">TheShop</h1>
+      <Link to="/">
+        <h1 className="header__logoText">TheShop</h1>
       </Link>
       <div className="header__search">
         <input className="header__searchInput" type="search" />
@@ -30,13 +30,12 @@ const Header = () => {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
-<Link to="/checkout">
-<div className="header__optionBasket">
-          <ShoppingBasketIcon />
-          <span className="header__optionLineTwo header__basketCount">0</span>
-        </div>
-</Link>
-        
+        <Link to="/checkout">
+          <div className="header__optionBasket">
+            <ShoppingBasketIcon />
+            <span className="header__optionLineTwo header__basketCount">0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
