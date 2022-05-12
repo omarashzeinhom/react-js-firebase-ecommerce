@@ -26,6 +26,8 @@ function Home() {
 
           <div className="home__row">
             <Product
+            //id
+            id="0000001"
               // Name
               title="Lip stick"
               //Price
@@ -36,6 +38,7 @@ function Home() {
               image="https://res.cloudinary.com/du9aympvd/image/upload/v1652280154/product1_fcepwt.webp"
             />
             <Product
+              id="0000002"
               title="Purse"
               price={79.99}
               image="https://res.cloudinary.com/du9aympvd/image/upload/v1652280152/product_2_n1hlhj.webp"
@@ -45,6 +48,7 @@ function Home() {
 
           <div className="home__row">
             <Product
+              id="0000003"
               title="USB Flash Drive 8GB"
               price={3.99}
               image="https://res.cloudinary.com/du9aympvd/image/upload/v1652279961/pexels-eprism-studio-335257_p96vx2.webp"
@@ -55,6 +59,7 @@ function Home() {
 
           <div className="home__row">
             <Product
+              id="0000004"
               title="Camera"
               price={99.99}
               image="https://res.cloudinary.com/du9aympvd/image/upload/v1652279962/pexels-math-90946_isoyso.webp"
