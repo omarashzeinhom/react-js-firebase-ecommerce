@@ -24,7 +24,6 @@
 
 
 .product > button {
-
     background-color: #e0d2b4;
     background-image: linear-gradient(315deg, #e0d2b4 0%, #e2ac6b 74%);
     border: 1px 1px 1px 1px;
@@ -49,4 +48,7 @@
 .product__rating {
     display: flex;
     
+}
+.product__stars{
+    color: #ffca57;
 }
