@@ -68,7 +68,7 @@ a{
 }
 
 .header__searchIcon {
-  padding: 5px;
+  padding: 0.3rem;
   height: 22px !important;
   background-color: #461220;
   background-image: linear-gradient(315deg, #461220 0%, #e0d4ae 74%);
