@@ -1,10 +1,9 @@
 import React from "react";
 import Subtotal from "../Subtotal/Subtotal";
 import "./Checkout.css";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import JUMBOTRONIMG from "../../assets/images/background/checkout_ad.webp";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
 import { useStateValue } from "../StateProvider/StateProvider";
+import  {FaOpencart}  from 'react-icons/fa';
 
 function Checkout() {
   const [{ cart }] = useStateValue();
@@ -12,15 +11,17 @@ function Checkout() {
 <div className="checkout__billboard">
 <img
           className="checkout__ad"
-          src={JUMBOTRONIMG}
+          src="https://res.cloudinary.com/dxgqvvg0z/image/upload/v1652438966/theshop/checkout_ad_rqcgvh.webp"
           alt="checkoutad"
           loading="lazy"
         />
+
+        
         
     <div className="checkout__title">
         <h2>
+          <FaOpencart/>
           Welcome to your cart
-          <ShoppingCartIcon />
         </h2>
       </div>
 

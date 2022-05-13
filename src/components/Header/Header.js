@@ -2,8 +2,8 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom/umd/react-router-dom.development";
 import { useStateValue } from "../StateProvider/StateProvider";
-import SearchIcon from "@mui/icons-material/Search";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import  {FaOpencart, FaSearch}  from 'react-icons/fa';
+
 
 const Header = () => {
   const [{cart}, dispatch] = useStateValue();
@@ -13,8 +13,10 @@ const Header = () => {
         <h1 className="header__logoText">TheShop</h1>
       </Link>
       <div className="header__search">
+        
         <input className="header__searchInput" type="search" />
-        <SearchIcon className="header__searchIcon" size="large" />
+        <FaSearch className="header__searchIcon"
+        />
       </div>
 
       <div className="header__nav">
@@ -34,7 +36,7 @@ const Header = () => {
         </div>
         <Link to="/checkout" className="header__optionCart">
           <div className="header__optionCart">
-            <ShoppingCartIcon />
+            <FaOpencart/>
             <span className="header__optionLineTwo header__optionCart">{cart?.length}</span>
           </div>
         </Link>
