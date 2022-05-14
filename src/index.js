@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StateProvider } from './components/StateProvider/StateProvider';
-import reducer, { initalState } from './features/cartReducer';
+import reducer, { initalState } from './features/reducer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -3,9 +3,17 @@ import "./Header.css";
 import { Link } from "react-router-dom/umd/react-router-dom.development";
 import { useStateValue } from "../StateProvider/StateProvider";
 import { FaOpencart, FaSearch } from "react-icons/fa";
-
+import { auth } from "../../firebase";
 const Header = () => {
-  const [{ cart }, dispatch] = useStateValue();
+  const [{ cart, user }] = useStateValue();
+
+  // Handling sign in or sign out
+  const handleAuthentication= () => {
+    // if there is a user signout and go to login page
+    if (user){
+      auth.signOut();
+    }
+  }
   return (
     <div className="header">
       <Link to="/">
@@ -18,9 +26,9 @@ const Header = () => {
 
       <div className="header__nav">
         <Link to="/login">
-          <div className="header__option">
+          <div onClick={handleAuthentication} className="header__option">
             <span className="header__optionLineOne">Hello Guest</span>
-            <button className="header__btn">Login</button>
+            <button className="header__btn">{user ? 'Sign Out' : 'Sign In'}</button>
           </div>
         </Link>
         1
