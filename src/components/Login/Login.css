@@ -64,7 +64,6 @@
 
 .login__registerBtn {
   background-color: #e0d2b4;
-  background-image: linear-gradient(315deg, #4d432e 0%, #ff8c00 74%);
   border: 1px 1px 1px 1px;
   margin-top: 3px;
   border-color: black #e0d2b4 #e2ac6b;

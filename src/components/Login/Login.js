@@ -1,7 +1,27 @@
 import React from "react";
 import "./Login.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 function Login() {
+  //an empty string is used here instead ofnull to get text
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  //debug console.log(password,email);
+
+
+
+  const signIn = e => {
+      //stops the page from refreshing
+      e.preventDefault();
+
+      // some fancy firebase login ....
+
+  }
+
+  const register = e => {
+
+  }
+
   return (
     <div className="login">
       <Link to="/">
@@ -14,16 +34,25 @@ function Login() {
         <h1>Sign In</h1>
         <form>
           <h5>Email</h5>
-          <input type="text" />
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <h5>Password</h5>
-          <input type="password" />
-          <button className="login__signInBtn">Sign in</button>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="login__signInBtn" onClick={signIn} type="submit">Sign in</button>
         </form>
         <p>
           By Signing in you agree to the TheShop prototype Conditions of Use &
-          Sale. Please see our Privacy Notice, our Cookies Notice and our interest-based ads notice.
+          Sale. Please see our Privacy Notice, our Cookies Notice and our
+          interest-based ads notice.
         </p>
-        <button className="login__registerBtn">Register your account</button>
+        <button className="login__registerBtn" onClick={register}>Register your account</button>
       </div>
     </div>
   );
