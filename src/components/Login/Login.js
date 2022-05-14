@@ -2,25 +2,29 @@ import React from "react";
 import "./Login.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+// Notice : Remmebr  to import local firebase
+//import {auth} from "../../firebase"
 function Login() {
   //an empty string is used here instead ofnull to get text
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   //debug console.log(password,email);
 
+  const signIn = (e) => {
+    //stops the page from refreshing
+    e.preventDefault();
 
+    // do some fancy firebase login ....
+  };
 
-  const signIn = e => {
-      //stops the page from refreshing
-      e.preventDefault();
-
-      // some fancy firebase login ....
-
-  }
-
-  const register = e => {
-
-  }
+  const register = (e) => {
+    e.preventDefault();
+    auth.createUserWithEmailAndPassword(email, password).then((auth)=>{
+        console.log(auth);
+        //debug it successfully created a new user with email and password
+    }).catch(error=> alert(error.message))
+    // do some fancy firebase register
+  };
 
   return (
     <div className="login">
@@ -45,14 +49,18 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="login__signInBtn" onClick={signIn} type="submit">Sign in</button>
+          <button className="login__signInBtn" onClick={signIn} type="submit">
+            Sign in
+          </button>
         </form>
         <p>
           By Signing in you agree to the TheShop prototype Conditions of Use &
           Sale. Please see our Privacy Notice, our Cookies Notice and our
           interest-based ads notice.
         </p>
-        <button className="login__registerBtn" onClick={register}>Register your account</button>
+        <button className="login__registerBtn" onClick={register}>
+          Register your account
+        </button>
       </div>
     </div>
   );
