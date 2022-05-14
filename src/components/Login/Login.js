@@ -3,7 +3,7 @@ import "./Login.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // Notice : Remmebr  to import local firebase
-import {auth} from "../../firebase"
+import { auth } from "../../firebase";
 
 function Login() {
   //an empty string is used here instead ofnull to get text
@@ -14,28 +14,25 @@ function Login() {
 
   const signIn = (e) => {
     e.preventDefault();
-    auth.signInWithEmailAndPassword(email, password)
-    if (auth){
-      navigate('/')
-    }
+    auth.signInWithEmailAndPassword(email, password).then((auth) => {
+      navigate("/");
+    });
+
     // do some fancy firebase login ....
   };
 
-
-
   const register = (e) => {
     e.preventDefault();
-    auth.createUserWithEmailAndPassword(email, password).then((auth)=>{
-     if (auth) {
-      navigate('/');
-     }
-     
-    }).catch(error=> alert(error.message))
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => alert(error.message));
     // do some fancy firebase register
   };
-
-
-
 
   return (
     <div className="login">
