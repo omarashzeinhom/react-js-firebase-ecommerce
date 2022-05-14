@@ -43,6 +43,8 @@ a {
   align-items: center;
   color: antiquewhite;
   transition: 300ms;
+  font-size: 1.9rem;
+  padding-bottom: 5px;
 }
 
 .header__optionCart:hover {
