@@ -20,9 +20,7 @@ const Header = () => {
         <Link to="/login">
           <div className="header__option">
             <span className="header__optionLineOne">Hello Guest</span>
-            <button className="header__optionLineTwo header__btn">
-              Sign In
-            </button>
+            <button className="header__btn">Login</button>
           </div>
         </Link>
         1
