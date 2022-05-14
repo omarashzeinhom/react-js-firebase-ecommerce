@@ -3,7 +3,8 @@ import "./Login.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 // Notice : Remmebr  to import local firebase
-//import {auth} from "../../firebase"
+import {auth} from "../../firebase"
+
 function Login() {
   //an empty string is used here instead ofnull to get text
   const [email, setEmail] = useState("");

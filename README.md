@@ -82,6 +82,15 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [React.js](https://reactjs.org/)
 * [NextAuth.js](https://next-auth.js.org/)
 
+### Requirements 
+
+* [yarn]()
+* [react-icons]()
+* [react-currency-format](https://www.npmjs.com/package/react-currency-format)
+* [firebase]()
+* [firebase-tools]()
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
