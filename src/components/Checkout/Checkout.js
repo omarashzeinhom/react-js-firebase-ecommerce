@@ -6,7 +6,7 @@ import { useStateValue } from "../StateProvider/StateProvider";
 import  {FaOpencart}  from 'react-icons/fa';
 
 function Checkout() {
-  const [{ cart }] = useStateValue();
+  const [{ cart,user }] = useStateValue();
   return (
 <div className="checkout__billboard">
 <img
@@ -20,8 +20,10 @@ function Checkout() {
         
     <div className="checkout__title">
         <h2>
-          <FaOpencart/>
           Welcome to your cart
+          <FaOpencart/>
+          <br/>
+          {user.email}
         </h2>
       </div>
 

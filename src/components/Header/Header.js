@@ -28,10 +28,12 @@ const Header = () => {
         {/* If there was no user redirect to login */}
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
-            <span className="header__optionLineOne">Hello Guest</span>
+            <span className="header__optionLineOne">{user ? user.email : "Hello Guest"}</span>
             <button className="header__btn">
               {user ? "Sign Out" : "Sign In"}
             </button>
+                    {/* If there was a user print sign out if not print signin*/}
+
           </div>
         </Link>
         1
