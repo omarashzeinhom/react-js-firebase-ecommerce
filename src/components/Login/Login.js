@@ -1,31 +1,41 @@
 import React from "react";
 import "./Login.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // Notice : Remmebr  to import local firebase
 import {auth} from "../../firebase"
 
 function Login() {
   //an empty string is used here instead ofnull to get text
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   //debug console.log(password,email);
 
   const signIn = (e) => {
-    //stops the page from refreshing
     e.preventDefault();
-
+    auth.signInWithEmailAndPassword(email, password)
+    if (auth){
+      navigate('/')
+    }
     // do some fancy firebase login ....
   };
+
+
 
   const register = (e) => {
     e.preventDefault();
     auth.createUserWithEmailAndPassword(email, password).then((auth)=>{
-        console.log(auth);
-        //debug it successfully created a new user with email and password
+     if (auth) {
+      navigate('/');
+     }
+     
     }).catch(error=> alert(error.message))
     // do some fancy firebase register
   };
+
+
+
 
   return (
     <div className="login">
