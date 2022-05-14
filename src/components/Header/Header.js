@@ -8,12 +8,12 @@ const Header = () => {
   const [{ cart, user }] = useStateValue();
 
   // Handling sign in or sign out
-  const handleAuthentication= () => {
+  const handleAuthentication = () => {
     // if there is a user signout and go to login page
-    if (user){
+    if (user) {
       auth.signOut();
     }
-  }
+  };
   return (
     <div className="header">
       <Link to="/">
@@ -25,10 +25,13 @@ const Header = () => {
       </div>
 
       <div className="header__nav">
-        <Link to="/login">
+        {/* If there was no user redirect to login */}
+        <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
             <span className="header__optionLineOne">Hello Guest</span>
-            <button className="header__btn">{user ? 'Sign Out' : 'Sign In'}</button>
+            <button className="header__btn">
+              {user ? "Sign Out" : "Sign In"}
+            </button>
           </div>
         </Link>
         1
