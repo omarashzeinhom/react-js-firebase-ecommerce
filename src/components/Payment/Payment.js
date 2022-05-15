@@ -1,9 +1,53 @@
-import React from 'react'
+import React from "react";
+import "./Payment.css";
+import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
+import { useStateValue } from "../StateProvider/StateProvider";
 
 function Payment() {
+  const [{ cart, user }, dispatch] = useStateValue();
+
   return (
-    <div>Payment</div>
-  )
+    <div className="payment">
+      <div className="payment__container">
+        {/* Payment Section - delivery address  */}
+        <div className="payment__section">
+          <div className="payment__title">
+            <h1>Delivery Address</h1>
+            <div className="payment__address">
+              <p>email : {user?.email}</p>
+              <p>789 PureJS st</p>
+              <p>New York City, NYC</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Payment Section - Review */}
+
+        <div className="payment__section">
+          <div className="payment__title">
+            <h1>Review items and delivery</h1>
+          </div>
+          <div className="payment__items">
+          {cart.map(item => (
+              <CheckoutProduct
+              id={item.id}
+              title={item.title}
+              image={item.image}
+              price={item.price}
+              rating={item.rating}
+              />
+            ))}
+          </div>
+        </div>
+        {/* Payment Section - Payment method */}
+        <div className="payment__section">
+          <div className="payment__title">
+            <h1>Payment Method</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Payment
+export default Payment;
