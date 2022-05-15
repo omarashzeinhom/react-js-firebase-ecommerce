@@ -31,7 +31,7 @@ function Subtotal() {
         prefix={"€"}
       />
 
-      <button onClick={event => navigate('/payment')}>Proceed to Checkout</button>
+      <button className="subtotal__btn"onClick={event => navigate('/payment')}>Proceed to Checkout</button>
     </div>
   );
 }
