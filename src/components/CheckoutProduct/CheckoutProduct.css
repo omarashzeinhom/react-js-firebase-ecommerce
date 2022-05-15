@@ -9,6 +9,7 @@
 
 .checkoutProduct__rating {
   display: flex;
+  justify-content:center;
 }
 
 

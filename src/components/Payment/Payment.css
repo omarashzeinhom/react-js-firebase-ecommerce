@@ -1,0 +1,15 @@
+.payment {
+  background-color: #461220;
+  background-image: linear-gradient(315deg, #461220 0%, #e0d4ae 74%);
+  justify-content: center;
+  text-align: center;
+
+}
+
+.payment > p {
+  color: white;
+}
+
+.payment > h1 {
+  color: white;
+}

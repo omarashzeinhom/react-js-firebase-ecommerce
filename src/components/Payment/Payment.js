@@ -28,13 +28,13 @@ function Payment() {
             <h1>Review items and delivery</h1>
           </div>
           <div className="payment__items">
-          {cart.map(item => (
+            {cart.map((item) => (
               <CheckoutProduct
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                price={item.price}
+                rating={item.rating}
               />
             ))}
           </div>
@@ -44,6 +44,13 @@ function Payment() {
           <div className="payment__title">
             <h1>Payment Method</h1>
           </div>
+          <div className="payment__details"></div>
+        </div>
+
+        <div className="payment__note">
+          Bear in mind this is a development version so please do not enter your
+          credit card information here or it will occur charges . The credit
+          card you can use for the development website is .
         </div>
       </div>
     </div>
