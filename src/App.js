@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import {auth} from './firebase';
 import { useStateValue } from "./components/StateProvider/StateProvider";
 
+import Payment from "./components/Payment/Payment";
+
 function App() {
   //leave as it is
   const [{ cart, user }, dispatch] = useStateValue();
@@ -48,6 +50,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
 
           <Route exact path="/checkout" element={<Checkout />} />
+
+          <Route exact path="/payment" element={<Payment />} />
         </Routes>
       </div>
     </BrowserRouter>
