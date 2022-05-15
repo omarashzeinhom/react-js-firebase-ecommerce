@@ -27,7 +27,7 @@ function Home() {
             //id
             id="0000001"
             // Name
-            title="Lip stick"
+            title="Ultra Last Instant Colour Lipstick"
             //Price
             price={19.99}
             //Rating
@@ -37,7 +37,7 @@ function Home() {
           />
           <Product
             id="0000002"
-            title="Purse"
+            title="Bags for Women Handbags Purse Ladies Boho Shoulder Bag Crossbody Purses Faux"
             price={79.99}
             image="https://res.cloudinary.com/du9aympvd/image/upload/v1652280152/product_2_n1hlhj.webp"
             rating={3}
@@ -57,7 +57,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="0000004"
-            title="Camera"
+            title="Brand COOLPIC P500 8GBDigital Camera"
             price={99.99}
             image="https://res.cloudinary.com/du9aympvd/image/upload/v1652279962/pexels-math-90946_isoyso.webp"
             rating={2}

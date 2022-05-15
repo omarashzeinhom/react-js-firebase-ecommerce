@@ -52,11 +52,13 @@
 
 .product__info {
   height: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .product__rating {
   display: flex;
+  justify-content:center
 }
 .product__stars {
   color: #ffca57;
