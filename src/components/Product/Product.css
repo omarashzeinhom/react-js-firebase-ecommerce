@@ -58,7 +58,7 @@
 
 .product__rating {
   display: flex;
-  justify-content:center
+  justify-content: center;
 }
 .product__stars {
   color: #ffca57;
