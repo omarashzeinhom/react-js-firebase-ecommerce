@@ -9,10 +9,8 @@
 
 .checkoutProduct__rating {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-
-
 
 .checkoutProduct__image {
   border-radius: 7px;
