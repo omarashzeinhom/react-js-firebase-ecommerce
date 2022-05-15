@@ -6,6 +6,14 @@
 .payment > p {
   color: white;
 }
+.payment > h1 {
+  color: white;
+  background-color: #e0d4ae;
+  border-bottom: 1px solid rgb(255, 254, 254);
+  font-weight: 500;
+  padding: 10px;
+  font-size: 1.7rem;
+}
 
 .payment > h1 a {
   color: white;
