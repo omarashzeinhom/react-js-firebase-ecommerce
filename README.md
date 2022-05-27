@@ -21,7 +21,7 @@ The Shop- a full ecommerce website built utilizing React.Js and firebase
     <br />
     <br />
     <br />
-    <a href="https://github.com/omarashzeinhom/theshop-amazon-insipred-shop/">View Demo</a>
+    <a href="https://th3shop-8d8a3.web.app/">View Demo</a>
     ·
     <a href="https://github.com/omarashzeinhom/theshop-amazon-insipred-shop/issues">Report Bug</a>
     ·
