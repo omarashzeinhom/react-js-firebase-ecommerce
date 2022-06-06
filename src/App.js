@@ -21,7 +21,7 @@ function App() {
     // this will only run when the app component laods
     // as soon as the app loads the 
     auth.onAuthStateChanged(authUser => {
-      console.log('THE USER IS >>>>> : ', authUser)
+      //console.log('THE USER IS >>>>> : ', authUser)
 
       if (authUser){
         // user has logged in
