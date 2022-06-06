@@ -11,7 +11,7 @@ export const getCartTotal = (cart) =>
 // passing the state and action of what to do
 const reducer = (state, action) => {
   //debug action start
-  console.log(action);
+  //console.log(action);
   //debug action end
   switch (action.type) {
     case "ADD_TO_CART":
